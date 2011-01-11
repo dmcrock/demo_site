@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'compass', ">= 0.10.6"
 gem 'rails3-generators'
 gem 'haml-rails'
+gem 'simple_form'
 
 # Use unicorn as the web server
 # gem 'unicorn'
