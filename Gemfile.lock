@@ -30,6 +30,7 @@ GEM
     activesupport (3.0.3)
     arel (2.0.6)
     builder (2.1.2)
+    coderay (0.9.6)
     compass (0.10.6)
       haml (>= 3.0.4)
     erubis (2.6.6)
@@ -84,6 +85,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  coderay
   compass (>= 0.10.6)
   haml-rails
   jquery-rails

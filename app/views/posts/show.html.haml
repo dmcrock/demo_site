@@ -1,0 +1,22 @@
+- title "\##{@post.sequence} #{@post.title}"
+%p= raw @post.description
+
+.postNav
+  .prev= post_link(:previous)
+  .next= post_link(:next)
+%br
+%br
+%br
+%p= link_to 'View All Posts', posts_path
+
+- for section in @post.sections
+  .section
+    %h2= section.heading
+    .body= raw section.body
+    - unless section.snippet.blank?
+      .snippet
+        .content
+          .caption= section.snippet.caption
+          ~ sanitize( coderay(section.snippet.content, section.snippet.language)
+          
+          
